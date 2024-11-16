@@ -1,0 +1,45 @@
+.hero {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid grey;
+  cursor: default;
+}
+.coursesL {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 10px;
+}
+.searchBar {
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+.inputTag {
+  height: 30px;
+  border-radius: 20px;
+  width: 150px;
+  font-size: 0.8rem;
+  padding-left: 10px;
+  margin-left: 5px;
+}
+.search {
+  height: 30px;
+  width: 30px;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .coursesL {
+    overflow-x: scroll;
+    gap: 1.8rem;
+  }
+}

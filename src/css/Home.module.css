@@ -1,0 +1,177 @@
+.hero {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rowOne,
+.rowTwo {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  cursor: default;
+}
+.rowOneLeft {
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.rowOneLeftWelcome {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+.rowOneLeftGovardhan,
+.rowOneLeftTech {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: clamp(16px, 5vw, 48px);
+  font-weight: 500;
+}
+@keyframes textclip {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.rowOneRight {
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.img1,
+.img2 {
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  aspect-ratio: 19 / 13;
+}
+.rowTwoLeft {
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.rowTwoRight {
+  height: 100%;
+  width: 50%;
+}
+.rowTwoAboutUs,
+.rowThreeTopCourses {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: blue;
+}
+.rowTwoTypeAnimation {
+  font-weight: 500;
+}
+.rowTwoTypeAnimationT{
+  font-size: 2rem;
+}
+.rowTwoPara {
+  height: 100%;
+  max-width: 85%;
+  width: 95%;
+}
+.rowTwoButton {
+  height: 40px;
+  width: 110px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.rowThree {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.rowThreeMiddleExplore {
+  font-weight: 600;
+}
+.rowThreeMiddle {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.35rem;
+  margin-bottom: 1.5rem;
+}
+.rowThreeBottom {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+@media screen and (max-width: 800px){
+  .img2{
+    max-width: 400px;
+    aspect-ratio: 18 / 13;
+  }
+  .rowTwoTypeAnimationT{
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 530px){
+  .rowOne,.rowTwo{
+    flex-direction: column;
+  }
+  .rowOneLeftWelcome,.rowThreeMiddleExplore{
+    font-size: 1.78rem;
+    text-align: center;
+  }
+  .rowOneLeftGovardhan,.rowOneLeftTech{
+    font-size: 2.5rem;
+  }
+  .img1,.img2{
+    max-width: 330px;
+  }
+  .rowTwoRight{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rowTwoAboutUs,.rowThreeTopCourses{
+    font-size: 1.4rem;
+  }
+  .rowThreeBottom{
+    flex-direction: column;
+  }
+}
