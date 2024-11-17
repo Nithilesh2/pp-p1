@@ -58,6 +58,18 @@ const Courses = () => {
           navigate="/courses/mongodbpage"
           tutorialDesc="MongoDB is a popular NoSQL database that provides a flexible and scalable solution for storing and retrieving data."
         />
+        <ExploreCourses
+          img="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png"
+          tutorialHeader="Angular JS Tutorials"
+          navigate="/courses/angularjspage"
+          tutorialDesc="AngularJS is a JavaScript framework for building dynamic single-page web applications (SPAs) with features like two-way data binding, dependency injection, and MVC architecture."
+        />
+        <ExploreCourses
+          img="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"
+          tutorialHeader="PostgreSQL Tutorials"
+          navigate="/courses/postgresqlpage"
+          tutorialDesc="PostgreSQL is a powerful open-source relational database known for its advanced features, ACID compliance, and support for both SQL and JSON querying."
+        />
       </div>
     </>
   )

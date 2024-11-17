@@ -16,6 +16,8 @@ import Css from './components/CoursesPages/Css';
 import Php from './components/CoursesPages/Php';
 import Python from './components/CoursesPages/Python';
 import MongoDb from './components/CoursesPages/MongoDb';
+import PostgreSql from './components/CoursesPages/PostgreSql';
+import AngularJS from './components/CoursesPages/AngularJS';
 
 
 const App = () => {
@@ -37,6 +39,8 @@ const App = () => {
           <Route path='/courses/phppage' element={<Php />}/>
           <Route path='/courses/pythonpage' element={<Python />}/>
           <Route path='/courses/mongodbpage' element={<MongoDb />}/>
+          <Route path='/courses/angularjspage' element={<AngularJS />}/>
+          <Route path='/courses/postgresqlpage' element={<PostgreSql />}/>
         </Routes>
       </BrowserRouter>
     </>

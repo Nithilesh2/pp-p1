@@ -18,8 +18,8 @@ const Home = () => {
           <div className={styles.rowOneLeft}>
             <h3 className={styles.rowOneLeftTechd}>Hello,{userName}</h3>
             <h2 className={styles.rowOneLeftWelcome}>WELCOME TO</h2>
-            <h1 className={styles.rowOneLeftGovardhan}>Govardhan</h1>
-            <h1 className={styles.rowOneLeftTech}>Tech</h1>
+            <h1 className={styles.rowOneLeftGovardhan}>Course Provider</h1>
+            <h1 className={styles.rowOneLeftGovardhan}> Platform</h1>
           </div>
           <div className={styles.rowOneRight}>
             <img
@@ -68,11 +68,6 @@ const Home = () => {
               coding techniques to people in short time which took me ages to
               learn.
             </p>
-            <div className={styles.rowTwoButtonBox}>
-              <button type="button" className={styles.rowTwoButton}>
-                Learn More
-              </button>
-            </div>
           </div>
         </div>
         <div className={styles.rowThree}>

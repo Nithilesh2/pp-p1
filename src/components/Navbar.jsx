@@ -13,7 +13,7 @@ const Navbar = () => {
       <nav className={styles.navbar}>
         <div className={styles.left}>
           <h3 className={styles.logo} onClick={() => navigate("/")}>
-            Govardhan Tech
+          Course provider platform
           </h3>
         </div>
         <div className={styles.right}>
