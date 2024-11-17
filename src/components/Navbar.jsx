@@ -6,51 +6,67 @@ import { useNavigate } from "react-router-dom"
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
   const navigate = useNavigate()
+  const userId = localStorage.getItem("userId") || ""
 
   return (
     <>
       <nav className={styles.navbar}>
         <div className={styles.left}>
-          <h3 className={styles.logo}>Govardhan Tech</h3>
+          <h3 className={styles.logo} onClick={() => navigate("/")}>
+            Govardhan Tech
+          </h3>
         </div>
         <div className={styles.right}>
-            <ul className={toggle? styles.rightPagesA: styles.rightPages}>
+          <ul className={toggle ? styles.rightPagesA : styles.rightPages}>
+            <li
+              onClick={() => {
+                navigate("/")
+              }}
+            >
+              Home
+            </li>
+            <li
+              onClick={() => {
+                navigate("/courses")
+              }}
+            >
+              Courses
+            </li>
+            <li
+              onClick={() => {
+                navigate("/tutorials")
+              }}
+            >
+              Tutorials
+            </li>
+            <li
+              onClick={() => {
+                navigate("/contact")
+              }}
+            >
+              Contact
+            </li>
+            {userId === "" ? (
+              <>
+                <li
+                  onClick={() => {
+                    navigate("/login")
+                  }}
+                >
+                  Log in
+                </li>
+              </>
+            ) : (
               <li
                 onClick={() => {
+                  localStorage.removeItem("userId")
                   navigate("/")
                 }}
               >
-                Home
+                Log out
               </li>
-              <li
-                onClick={() => {
-                  navigate("/courses")
-                }}
-              >
-                Courses
-              </li>
-              <li
-                onClick={() => {
-                  navigate("/tutorials")
-                }}
-              >
-                Tutorials
-              </li>
-              <li
-                onClick={() => {
-                  navigate("/contact")
-                }}
-              >
-                Contact
-              </li>
-              <li
-                onClick={() => {
-                  navigate("/login")
-                }}
-              >
-                Login
-              </li>
-            </ul>
+            )}
+          </ul>
         </div>
         <div className={styles.toggleBtn}>
           <IoMenu onClick={() => setToggle(!toggle)} />

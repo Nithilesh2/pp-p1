@@ -7,6 +7,8 @@ import ExploreCourses from "../components/ExploreCourses"
 import Footer from "../components/Footer"
 
 const Home = () => {
+  
+  const userName = localStorage.getItem("userName")
   return (
     <>
       <div className={styles.hero}>
@@ -14,6 +16,7 @@ const Home = () => {
         <CoursesBar />
         <div className={styles.rowOne}>
           <div className={styles.rowOneLeft}>
+            <h3 className={styles.rowOneLeftTechd}>Hello,{userName}</h3>
             <h2 className={styles.rowOneLeftWelcome}>WELCOME TO</h2>
             <h1 className={styles.rowOneLeftGovardhan}>Govardhan</h1>
             <h1 className={styles.rowOneLeftTech}>Tech</h1>
@@ -86,6 +89,7 @@ const Home = () => {
               <ExploreCourses
                 img="https://nctaindia.in/images/course/javascript.jpg"
                 tutorialHeader="Javascript Tutorials"
+                navigate="/courses/jspage"
                 tutorialDesc="JavaScript is a versatile and widely used programming language that powers interactive web applications."
               />
             </div>
@@ -93,6 +97,7 @@ const Home = () => {
               <ExploreCourses
                 img="https://www.classcentral.com/report/wp-content/uploads/2023/09/bcg_python_banner.png"
                 tutorialHeader="Python Tutorials"
+                navigate="/courses/pythonpage"
                 tutorialDesc="Python is a versatile and beginner-friendly programming language known for its readability and ease of use."
               />
             </div>
@@ -100,6 +105,7 @@ const Home = () => {
               <ExploreCourses
                 img="https://images.ctfassets.net/aq13lwl6616q/7cS8gBoWulxkWNWEm0FspJ/c7eb42dd82e27279307f8b9fc9b136fa/nodejs_cover_photo_smaller_size.png"
                 tutorialHeader="Node JS Tutorials"
+                navigate="/courses/nodejspage"
                 tutorialDesc="Node.js is a powerful runtime environment that allows developers to build scalable and high-performance server-side applications using JavaScript."
               />
             </div>
