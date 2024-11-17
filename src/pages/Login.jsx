@@ -16,7 +16,8 @@ const Login = () => {
     e.preventDefault()
     try {
       const response = await axios.post(
-        "http://localhost:8875/login",
+        // "http://localhost:8875/login",
+        "https://pp-p1-govardhan-backend.onrender.com/login",
         { email, password },
         { headers: { "Content-Type": "application/json" } }
       )

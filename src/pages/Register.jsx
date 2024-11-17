@@ -16,7 +16,8 @@ const Register = () => {
     e.preventDefault()
     try {
       const response = await axios.post(
-        "http://localhost:8875/signup",
+        // "http://localhost:8875/signup",
+        "https://pp-p1-govardhan-backend.onrender.com/signup",
         { name, email, password },
         { headers: { "Content-Type": "application/json" } }
       )
