@@ -22,13 +22,30 @@
   height: 170px;
   width: 170px;
 }
-.header{
+.header {
   font-size: 1.5rem;
   font-weight: 500;
 }
-.button{
+.button {
   height: 40px;
   width: 140px;
   border-radius: 10px;
   font-size: 1rem;
+}
+@media screen and (max-width: 400px) {
+  .hero {
+    width: 300px;
+    max-width: 90%;
+  }
+  .image{
+    height: 130px;
+    width: 130px;
+  }
+  .header{
+    font-size: 1.3rem;
+  }
+  .button{
+    font-size: 0.85rem;
+    width: 120px;
+  }
 }
