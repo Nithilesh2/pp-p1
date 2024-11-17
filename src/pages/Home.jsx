@@ -61,7 +61,7 @@ const Home = () => {
             </div>
             <p className={styles.rowTwoPara}>
               Confused on which course to take? I have got you covered. Its
-              free! AnkeshSirTechnical is my attempt to teach basics and those
+              free! GovardhanTechnical is my attempt to teach basics and those
               coding techniques to people in short time which took me ages to
               learn.
             </p>
