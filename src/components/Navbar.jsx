@@ -45,7 +45,7 @@ const Navbar = () => {
               </li>
               <li
                 onClick={() => {
-                  navigate("/")
+                  navigate("/login")
                 }}
               >
                 Login

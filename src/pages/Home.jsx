@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar"
 import CoursesBar from "../components/CoursesBar"
 import { TypeAnimation } from "react-type-animation"
 import ExploreCourses from "../components/ExploreCourses"
-import Footer from "../components/Footer";
+import Footer from "../components/Footer"
 
 const Home = () => {
   return (
@@ -20,7 +20,7 @@ const Home = () => {
           </div>
           <div className={styles.rowOneRight}>
             <img
-              src="https://e-learning-rs8h.onrender.com/images/pexels-pixabay-39284.jpg"
+              src="https://medianama.com/wp-content/uploads/2020/10/macbook-apple-imac-free.jpg.jpg"
               alt="img1"
               className={styles.img1}
             />
@@ -29,7 +29,7 @@ const Home = () => {
         <div className={styles.rowTwo}>
           <div className={styles.rowTwoLeft}>
             <img
-              src="https://e-learning-rs8h.onrender.com/images/about.jpg"
+              src="https://static.toiimg.com/photo/67214972.cms"
               alt="img2"
               className={styles.img2}
             />
@@ -38,7 +38,7 @@ const Home = () => {
             <h2 className={styles.rowTwoAboutUs}>About Us</h2>
             <div className={styles.rowTwoTypeAnimation}>
               <TypeAnimation
-              className={styles.rowTwoTypeAnimationT}
+                className={styles.rowTwoTypeAnimationT}
                 sequence={[
                   "Learn JavaScript",
                   1000,
@@ -84,21 +84,21 @@ const Home = () => {
           <div className={styles.rowThreeBottom}>
             <div className={styles.rowThreeBottomJST}>
               <ExploreCourses
-                img="https://e-learning-rs8h.onrender.com/images/javascript-banner.jpg"
+                img="https://nctaindia.in/images/course/javascript.jpg"
                 tutorialHeader="Javascript Tutorials"
                 tutorialDesc="JavaScript is a versatile and widely used programming language that powers interactive web applications."
               />
             </div>
             <div className={styles.rowThreeBottomPYT}>
               <ExploreCourses
-                img="https://e-learning-rs8h.onrender.com/images/puthon-banner.jpeg"
+                img="https://www.classcentral.com/report/wp-content/uploads/2023/09/bcg_python_banner.png"
                 tutorialHeader="Python Tutorials"
                 tutorialDesc="Python is a versatile and beginner-friendly programming language known for its readability and ease of use."
               />
             </div>
             <div className={styles.rowThreeBottomNDT}>
               <ExploreCourses
-                img="https://e-learning-rs8h.onrender.com/images/Nodejs-banner.jpeg"
+                img="https://images.ctfassets.net/aq13lwl6616q/7cS8gBoWulxkWNWEm0FspJ/c7eb42dd82e27279307f8b9fc9b136fa/nodejs_cover_photo_smaller_size.png"
                 tutorialHeader="Node JS Tutorials"
                 tutorialDesc="Node.js is a powerful runtime environment that allows developers to build scalable and high-performance server-side applications using JavaScript."
               />
